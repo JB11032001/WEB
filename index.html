@@ -1,0 +1,425 @@
+<html>
+<head>
+		<title>Audi Sport</title>	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  		<meta name="viewport" content="width=device-width">
+		
+<script>
+	"use strict";
+	
+	function fAlertRS6() {
+		alert("ab 119.000,00 EURO mit PrivatLeasing mtl. 1.017,00 EURO");
+	}
+	
+	function fAlertRS7() {
+		alert("ab 122.500,00 EURO mit PrivatLeasing mtl. 1.112,00 EURO");
+	}
+	
+	function fAlertRSQ8() {
+		alert("ab 129.500,00 EURO mit PrivatLeasing mtl. 1.107,00 EURO");
+	}
+	
+	function fAlertTTRS() {
+		alert("ab 68.250,00 EURO mit PrivatLeasing mtl. 593,00 EURO");
+	}
+	
+	function fAlertR8() {
+		alert("ab 214.500,00 EURO mit PrivatLeasing mtl. 2.127,00 EURO");
+	}
+	
+</script>
+	
+<style type="text/css">
+
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	body {
+		background-image: url("Bilder/Hintergrund.jpg");
+		font-family: sans-serif; 
+	}
+		
+	#Gesamt {
+		overflow:hidden;
+    	background: black;
+		height: auto;
+		width: 60%;
+		margin: auto;
+		border-right: 3px #a41c17 dashed;
+		border-left: 3px #a41c17 dashed;
+	}
+	
+	.Kopf {
+		padding: 3%;
+		text-align: center;
+	}	
+	
+	.Menue {
+		
+		text-align: center;
+		color: #a41c17;
+	}
+	
+	.Menue :hover {
+ 		color: #a41c17;
+	}
+	
+	li {
+		display: inline-block;
+		
+	}
+	
+	a:link, a:visited {
+		color: #a41c17; 
+		text-decoration: none;
+	}
+
+	a:hover{
+		background-color: white;
+	}
+	
+	.InhaltAutos {
+		color: white;
+		margin: 2% 7% 2% 7%;
+	}
+	
+	.InhaltFarbe {
+		color: white;
+		margin: 2% 7% 2% 7%;
+	}
+	
+	.Anfrage {
+		background-color: #1F1F1F;
+		color: white;
+		padding: 1%;
+		margin: 2% 7% 2% 7%;
+	}
+		
+	#rollover ul li {
+		list-style: none;
+	}
+
+	#rollover ul li a {
+		width: 500px;
+		height: 150px;
+		display: block;		
+		background: url("Bilder/Audi Logo.png");
+	}
+
+	#rollover ul li a:hover {
+		background: url("Bilder/RS Logo.png");
+	}
+	
+	form {
+		width: 70%;
+		padding: 10px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	label {
+		display: block;
+	}
+
+	input#Name_U,
+	input#mail,
+	select,
+	textarea
+ 
+ 	{ 
+	 	width: 50%;
+		margin-bottom: 1em;		
+	}
+	
+/*Screen-Layout für Browsergrößen mit einer Mindestgröße von 900px*/
+   
+@media screen and (min-width: 900px) {
+		  
+	.Menue {
+		display: inline;
+		text-align: center;
+		color: #a41c17;
+	}
+}
+	
+/*Screen-Layout für Browsergrößen mit einer Maximalengröße von 900px*/
+	
+@media screen and (max-width: 900px) {
+	
+	#Gesamt {
+		width: 80%;
+	}
+	
+	.Menue {
+		display: inline;
+		text-align: center;
+		color: #a41c17;
+	}	
+	
+	tr, th, td {
+ 		display: block;
+	}
+	
+	tr {
+		padding: 5px;
+		border-top: 0 none;
+	}
+	
+	th {
+		padding: 5px;
+	}
+	
+	td {
+		padding: 5px;
+	}
+	
+	input#Name_U,
+	input#mail,
+	select,
+	textarea {
+		width: 100%;
+	}
+}
+
+/*Druck-Layout*/
+
+@media print {
+	
+	.InhaltAutos {
+		margin: 10px;
+	}
+	
+	.InhaltFarbe{
+		margin: 10px;
+	}
+	
+	th {
+		display: none;
+	}
+	
+	body {
+		image: 50%;
+	}
+	
+	#Gesamt {
+		width: 95%;
+	}
+	
+	.Menue, #rollover, .Anfrage {
+		display: none;
+	}
+} 
+	</style> 
+</head>
+
+<body>
+	
+	<div id="Gesamt">
+	
+		<div class="Kopf"> 
+			<img src="Bilder/Logo.jpg" width="100%">
+		</div>
+		
+		
+		<div class="Menue">
+		<ul>
+      		<li><a href="#Autos"><h2>Autos |</h2></a></li>
+			<li><a href="#Farbe"><h2>Farben |</h2></a></li>
+			<li><a href="#Anfrage"><h2>Angebotsanfrage</h2></a></li>
+  		</ul>
+		</div>
+		
+		
+		<div class="InhaltAutos">
+			<h1 id="Autos" strong style="text-align: center">Autos</h1 strong>
+			<table border="0" width="100%" cellspacing="20" style="color: white; text-align: left">
+						
+			<tr><td><img src="Bilder/Auto - RS6 Avant.png" width="300"></td>
+				<td>
+					<h2 strong>RS6 Avant</h2><p>
+					Kraftstoffverbrauch: 11,6 – 11,5 l / 100km<p>
+					CO2-Emmision: 265 - 263 g/km<p>
+					Leistung: 441 kW (600 PS)<p>
+					Beschleunigung: 3,6 Sek   0 auf 100 km/h<p>
+					Höchstgeschwindigkeit: 305 km/h<p></br>
+					4,0-Liter-V8-Biturbo-TFSI-Motor<p>
+				</td>
+				<th align="right" valign="bottom"><button onClick="fAlertRS6();">PREIS</button></th>
+			</tr>
+				
+			<tr><td><img src="Bilder/Auto - RS7 Sportback.png" width="300"></td>
+				<td>
+					<h2 strong>RS7 Sportback</h2><p>
+					Kraftstoffverbrauch: 11,6 – 11,5 l / 100km<p>
+					CO2-Emmision: 265 -263 g/km<p>
+					Leistung: 441 kW (600 PS)<p>
+					Beschleunigung: 3,6 Sek   0 auf 100 km/h<p>
+					Höchstgeschwindigkeit: 305 km/h<p></br>
+					4,0-Liter-V8-Biturbo-Motor<p> 
+				</td>
+				<th align="right" valign="bottom"><button onClick="fAlertRS7();">PREIS</button></th>
+			</tr>
+				
+			<tr><td><img src="Bilder/Auto - RSQ8.png" width="300"></td>
+				<td>
+					<h2 strong>RSQ8</h2><p>
+					Kraftstoffverbrauch: 12,3 – 12,31l / 100km<p>
+					CO2-Emmision: 281 -276 g/km<p>
+					Leistung: 441 kW (600 PS)<p>
+					Beschleunigung: 3,8 Sek   0 auf 100 km/h<p>
+					Höchstgeschwindigkeit: 305 km/h<p></br>
+					4,0-Liter-V8-TFSI -Motor<p>
+				</td>
+				<th align="right" valign="bottom"><button onClick="fAlertRSQ8();">PREIS</button></th>
+			</tr>
+			
+			<tr><td><img src="Bilder/Auto - TTRS Coupe.png" width="300"></td>
+				<td>
+					<h2 strong>TTRS Coupé</h2><p>
+					Kraftstoffverbrauch: 8,5 l / 100km<p>
+					CO2-Emmision: 194 -193 g/km<p>
+					Leistung: 294 kW (400 PS)<p>
+					Beschleunigung: 3,7 Sek   0 auf 100 km/h<p>
+					Höchstgeschwindigkeit: 280 km/h<p></br>
+					2,5-Liter-TFSI-Reihen-5-Zylinder-Motor<p>
+				</td>
+				<th align="right" valign="bottom"><button onClick="fAlertTTRS();">PREIS</button></th>
+			</tr>
+				
+			<tr><td><img src="Bilder/Auto - R8 Spyder V10 Performance.png" width="300"></td>
+				<td>
+					<h2 strong>R8 Spyder V10 Performance</h2><p>
+					Kraftstoffverbrauch: 13,4 – 13,3 l / 100km<p>
+					CO2-Emmision: 306 -304 g/km<p>
+					Leistung: 456 kW (620 PS)<p>
+					Beschleunigung: 3,7 Sek   0 auf 100 km/h<p>
+					Höchstgeschwindigkeit: 329 km/h<p></br>
+					5.2-FSI-Aggregat<p>
+				</td>
+				<th align="right" valign="bottom"><button onClick="fAlertR8();">PREIS</button></th>
+			</tr>
+		
+			</table>
+			
+		</div>
+		
+		
+		<div class="InhaltFarbe">
+			<h1 id="Farbe" strong style="text-align: center">Farben</h1 strong></br>
+			<table border="0" width="100%" style="color: white; text-align: center">
+						
+			<tr>
+				<td><img src="Bilder/Farbe - Ascariblau Metallic.png" width="125"></br>Ascariblau<p>Metallic</td>
+				<td><img src="Bilder/Farbe - Javagrün Metallic.png" width="125"></br>Javagrün<p>Metallic</td>
+				<td><img src="Bilder/Farbe - Nardograu Uni.png" width="125"></br>Nardograu<p>Uni</td>
+				<td><img src="Bilder/Farbe - Arablau Kristalleffekt.png" width="125"></br>Arablau<p>Kristalleffekt</td>
+				<td><img src="Bilder/Farbe - Sepangblau Perleffekt.png" width="125"></br>Sepangblau<p>Perleffekt</td>
+			</tr>
+				
+			<tr>
+				<td><img src="Bilder/Farbe - Mythosschwarz Metallic.png" width="125"></br>Mythosschwarz<p>Metallic</td>
+				<td><img src="Bilder/Farbe - Tangorot Metallic.png" width="125"></br>Tangorot<p>Metallic</td>
+				<td><img src="Bilder/Farbe - Glutorange Uni.png" width="125"></br>Glutorange<p>Uni</td>
+				<td><img src="Bilder/Farbe - Misanorot Perleffekt.png" width="125"></br>Misanorot<p>Perleffekt</td>
+				<td><img src="Bilder/Farbe - Daytonagrau Perleffekt.png" width="125"></br>Daytonagrau<p>Perleffekt</td>
+			</tr>
+				
+			</table>
+		
+		</div>
+		
+		
+		<div class="Anfrage">
+			<h1 id="Anfrage" strong style="text-align: center">Angebotsanfrage</h1></br>
+
+			<form id="Anfrage" action="#" method="post" style="color: white">
+		<div>
+			<label for="Name">Name<sup>*</sup>:</label>
+			<input type="text" id="Name_U" name="Name_U" required placeholder="Bitte Vor- und Nachname">
+		</div>
+			
+		<div>
+			<label for="Mail">E-Mail-Adresse<sup>*</sup>:</label>
+			<input type="email" id="mail" name="besuchermail" placeholder="Bsp.: Muster@online.de">
+		</div>
+
+		<div>
+			<label for="Auto">Auto<sup>*</sup>:</label>
+                <select id="Auto" required>
+                 		<option>bitte auswählen</option>
+           				<option>RS6 Avant</option>
+						<option>RS7 Sportback</option>
+           				<option>RSQ8</option>
+						<option>TTRS Coupé</option>
+           				<option>R8 Spyder V10 Performance</option>
+                </select>
+			
+			<label for="Farbe">Farbe<sup>*</sup>:</label>
+                <select id="Farbe" required>
+                 		<option>bitte auswählen</option>
+						<option>Ascariblau Metallic</option>
+						<option>Javagrün Metallic</option>
+						<option>Nardograu Uni</option>
+						<option>Arablau Kristalleffekt</option>
+						<option>Sepangblau Perleffekt</option>
+						<option>Mythosschwarz Metallic</option>
+						<option>Tangorot Metallic</option>
+						<option>Glutorange Uni</option>
+						<option>Misanorot Perleffekt</option>
+						<option>Daytonagrau Perleffekt</option>
+                </select>
+			
+			<label for="Reifen">Reifen<sup>*</sup>:</label>
+                <select id="Reifen" required>
+                 		<option>bitte auswählen</option>
+						<option>19"</option>
+           				<option>20"</option>
+						<option>21"</option>
+						<option>22"</option>
+                </select>
+			
+			<label for="Felgen">Felgen<sup>*</sup>:</label>
+                <select id="Felgen" required>
+                 		<option>bitte auswählen</option>
+           				<option>Aluminium- Gussrad im 10-Speichen-Turbinen-Design (schwarz glänzend)</option>
+						<option>Aluminium- Gussrad im 5-Arm-Cavo-Design (anthrazit glanzgedreht)</option>
+           				<option>Winter-Aluminium- Gussrad im 5-Arm-Latus-Design (schwarz glänzend)</option>
+						<option>Winter-Aluminium- Gussrad im 5-Arm-Ramus-Design (brillantsilber)</option>
+                </select>
+			
+			<label for="Sitze">Sitze<sup>*</sup>:</label>
+                <select id="Sitze" required>
+                 		<option>bitte auswählen</option>
+           				<option>Stoffsitze</option>
+						<option>Ledersitze</option>
+						<option>Sportledersitze</option>
+						<option>Schalensitze</option>
+                </select>
+		</div>
+
+		<div>
+              <label for="nachricht">Ihre Nachricht:</label>
+              <textarea id="nachricht" name="nachricht" cols="20" rows="3"></textarea>
+        </div>
+
+
+        <div>
+              <input type="submit" value="Abschicken">
+
+        </div>
+        	</form>
+
+
+		</div>
+
+		<div id="rollover">
+			<ul>
+				<li><a href="#">&nbsp;</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
